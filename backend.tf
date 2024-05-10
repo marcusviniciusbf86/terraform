@@ -1,6 +1,6 @@
 terraform {
   backend "remote" {
-    organization = $VAR.ORG
+    organization = var.org_name
 
     workspaces {
       name = "workspace-hml"
